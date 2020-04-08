@@ -1,0 +1,240 @@
+h1{
+    font-size: 40px;
+    font-weight: Bold;
+    
+    font-family:  'Montserrat', sans-serif;
+    display: inline;
+
+}
+
+h2{
+    font-size: 30px;
+    font-weight: Bold;
+    
+    font-family:  'Montserrat', sans-serif;
+    display: inline;
+    
+}
+.titulo_1{
+    font-size: 24px;
+    font-weight: Bold;
+
+    font-family:  'Montserrat', sans-serif;
+}
+
+.titulo_2{
+    font-size: 22px;
+    font-weight: Bold;
+   
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.titulo_tab_car{
+    font-size: 16px;
+    //Regular
+   
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.dato_imp_car{
+    font-size: 16px;
+    font-weight: Bold;
+    line-height : 0px;
+    font-family:'Roboto', sans-serif;
+}
+
+
+// Dato tabla , Párrafo , Caption y text Field , Label , Botón pequeño , Botón grande
+
+.general_text {
+    font-size: 16px;
+   
+    font-family:'Roboto', sans-serif;
+}
+
+
+.bt_enabled{
+    width: 100%;
+    background:  #646567;
+    color:  #FFFFFF ;
+    height: 40px;
+    border-left: 8px solid  #DA4D00;
+    font-size: 12px; 
+    font-family:'Roboto', sans-serif;
+
+}
+
+
+.bt_enabled_selected{
+    width: 100%;
+    background:   #E95A0C;
+    color:  #FFFFFF ;
+    height: 40px;
+    border-left: 8px solid  #DA4D00;
+    font-size: 12px; 
+    font-family:'Roboto', sans-serif;
+}
+
+.bt_enabled:focus,.bt_enabled_selected:focus{
+    outline:0 !important;
+    box-shadow: none;
+}
+
+.bt_enabled_no_background{
+    width: 100%;
+  background: none;
+  font-size: 12px; 
+        height: 40px;
+    border-left: 8px solid  #DA4D00;
+    border-top: 4px solid  #646567;
+    border-right: 4px solid  #646567;
+    border-bottom: 4px solid  #646567;
+
+}
+
+
+
+.bt_enabled_steps{
+    width: 100%;
+    background: $crema_1;
+  
+          height: 100%;
+      border-left: 8px solid  #DA4D00;
+      border-top: 0px;
+    border-right: 0px;
+    border-bottom: 5px;
+    margin: 0 ;
+    padding: 0;
+    font-size: 12px; 
+}
+//EFECTS BUTTONS
+
+.bt_enabled:hover,.bt_enabled_selected:hover,.bt_enabled_no_background:hover,.bt_enabled_steps:hover{
+   background-color: #646567;
+    border-left: 8px solid  #F78140;
+    color:white;
+    
+}
+.bt_enabled:active,.bt_enabled_selected:active,.bt_enabled_no_background:active,.bt_enabled_steps:active{
+    background-color: $gris_fondo_0;
+     border-left: 8px solid  #F78140;
+     color:white;
+     
+ }
+ 
+
+//ICONS
+.triangle_right{
+	color: #E95A0C;
+    height: 40px;
+	width: 40px;
+	text-align: center;	
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+//INPUTS
+
+.fix_input{
+    outline: none;
+    width: 100%;
+    display:block;
+    background: none;
+   
+    border-right: none ;
+    border-left: none ;
+    border-top: none ;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    
+}
+.fix_input:focus{
+   
+    border-bottom: 2px solid $naranja_1;
+  
+    
+}
+
+//line
+
+.line{
+    width: 30px;
+    height: 2px;
+    border: 1px solid $naranja_0;
+}
+.parent_line{
+    width: 100%;
+    height: 2px;
+ 
+    background: white;;
+}
+
+//Checkbox
+.is_check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .is_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .is_check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .is_check input:checked ~ .checkmark {
+    background-color: #E95A0C;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .is_check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .is_check .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
