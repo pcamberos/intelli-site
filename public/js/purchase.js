@@ -171,7 +171,7 @@ var currencyFormat = function currencyFormat(num) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /var/www/html/intelli_lara/intellin/resources/js/purchase.js */"./resources/js/purchase.js");
+module.exports = __webpack_require__(/*! /home/ESTRASOL/juan.camberos/Documentos/PROYECTOS/Intelli/intelli_site/resources/js/purchase.js */"./resources/js/purchase.js");
 
 
 /***/ })

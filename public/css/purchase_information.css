@@ -55,6 +55,16 @@
   border-left: 7px solid #E95A0C;
 }
 
+.text-soft-gray {
+  color: #BFC3CC;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.line-title {
+  color: #E95A0C;
+}
+
 .border_area {
   border-right: 1px solid #BFC3CC;
 }
@@ -79,7 +89,7 @@
 
 .subtitle_area {
   color: #FFFFFF;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 27px;
@@ -166,55 +176,123 @@
   line-height: 19px;
 }
 
-#modalContinueBuy {
+#paymentModal .modal-body,
+#areaModal .modal-body,
+#productModal .modal-body {
+  background-color: #7F8185;
+  padding: 20px 20px !important;
+}
+
+#paymentModal .modal-body .select2-container--default .select2-selection--single .select2-selection__rendered,
+#paymentModal .modal-body .select_product,
+#areaModal .modal-body .select2-container--default .select2-selection--single .select2-selection__rendered,
+#areaModal .modal-body .select_product,
+#productModal .modal-body .select2-container--default .select2-selection--single .select2-selection__rendered,
+#productModal .modal-body .select_product {
+  color: #fff;
+}
+
+#paymentModal .modal-footer,
+#areaModal .modal-footer,
+#productModal .modal-footer {
+  background-color: #646567;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#paymentModal .modal-footer .text-total,
+#areaModal .modal-footer .text-total,
+#productModal .modal-footer .text-total {
+  color: #BFC3CC;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+#modalContinueBuy,
+#paymentModal,
+#areaModal,
+#productModal {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#modalContinueBuy .modal-dialog {
+#modalContinueBuy .modal-dialog,
+#paymentModal .modal-dialog,
+#areaModal .modal-dialog,
+#productModal .modal-dialog {
   margin-top: 150px;
 }
 
-#modalContinueBuy .cerrar {
+#modalContinueBuy .cerrar,
+#paymentModal .cerrar,
+#areaModal .cerrar,
+#productModal .cerrar {
   position: absolute;
   top: -50px;
   right: 0px;
   background: transparent;
 }
 
-#modalContinueBuy .modal-header {
+#modalContinueBuy .modal-header,
+#paymentModal .modal-header,
+#areaModal .modal-header,
+#productModal .modal-header {
   border-bottom: 0;
   background-color: #E95A0C;
 }
 
-#modalContinueBuy .modal-header i {
+#modalContinueBuy .modal-header i,
+#paymentModal .modal-header i,
+#areaModal .modal-header i,
+#productModal .modal-header i {
   font-size: 35px;
 }
 
-#modalContinueBuy .modal-header h5 {
+#modalContinueBuy .modal-header h5,
+#paymentModal .modal-header h5,
+#areaModal .modal-header h5,
+#productModal .modal-header h5 {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 23px;
 }
 
-#modalContinueBuy .modal-content {
+#modalContinueBuy .modal-content,
+#paymentModal .modal-content,
+#areaModal .modal-content,
+#productModal .modal-content {
   background-color: #646567;
   color: #fff;
   font-size: 16px;
   line-height: 20px;
 }
 
-#modalContinueBuy .modal-body {
+#modalContinueBuy .modal-body,
+#paymentModal .modal-body,
+#areaModal .modal-body,
+#productModal .modal-body {
   padding: 20px 45px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
 
-#modalContinueBuy .modal-footer {
+#modalContinueBuy .modal-footer,
+#paymentModal .modal-footer,
+#areaModal .modal-footer,
+#productModal .modal-footer {
   border-top: 0;
 }
 
 #modalContinueBuy .btn_back,
-#modalContinueBuy .btn_continue {
+#modalContinueBuy .btn_continue,
+#paymentModal .btn_back,
+#paymentModal .btn_continue,
+#areaModal .btn_back,
+#areaModal .btn_continue,
+#productModal .btn_back,
+#productModal .btn_continue {
   border-left: 7px solid #E95A0C !important;
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -225,12 +303,18 @@
   width: 100%;
 }
 
-#modalContinueBuy .btn_back {
+#modalContinueBuy .btn_back,
+#paymentModal .btn_back,
+#areaModal .btn_back,
+#productModal .btn_back {
   border: 3px solid #fff;
   background-color: transparent;
 }
 
-#modalContinueBuy .btn_continue {
+#modalContinueBuy .btn_continue,
+#paymentModal .btn_continue,
+#areaModal .btn_continue,
+#productModal .btn_continue {
   border: 3px solid transparent;
   background-color: #414345;
 }
@@ -253,6 +337,28 @@
 
   #modalContinueBuy .modal-body {
     padding: 20px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .price_total_area button,
+  .price_total_product button {
+    background: transparent;
+    border: 0;
+  }
+
+  .price_total_area button i,
+  .price_total_product button i {
+    color: #E95A0C;
+  }
+
+  .price_total_payment button {
+    background: transparent;
+    border: 0;
+  }
+
+  .price_total_payment button i {
+    color: #fff;
   }
 }
 
